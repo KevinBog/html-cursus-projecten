@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Huiswerk</title>
+        <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+        <script>
+            $(document).ready(function() {
+                $( "#knop" ).on( "click", function() {
+  $( "img" ).hide( "slow" );
+});
+            // Weergeef de paragrafen
+            $( "#knop2" ).on( "click", function() {
+                    $( "img" ).show( "slow" );
+                });
+            });
+            </script>
+    </head>
+    <body>
+<h1>Welkom op deze pagina met een jQuery-toepassing</h1>
+
+        <input id="knop" name="knop" type="button"
+        value="Klik hier om mij te verbergen"><br><br>
+        <input id="knop2" name="knop" type="button"
+        value="Klik hier om mij te weergeven"><br><br>
+<img src="klik.jpg">
+    </body>
+</html>

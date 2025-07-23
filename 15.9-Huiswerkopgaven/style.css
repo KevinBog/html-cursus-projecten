@@ -1,0 +1,75 @@
+body{
+    background-color: lightblue;
+    width: 50%; /* Breedte van het element */
+  margin-left: 25%; /* 50% van de breedte van de container */
+  margin-right: 25%; /* 50% van de breedte van de container */
+    font-family: Verdana;
+    cursor: crosshair;
+    padding: 5px;
+}
+li{
+   display: inline-block;
+   background-color: lightgreen;
+   border-radius: 5px;
+   border: 2px solid #2980b9;
+   padding: 5px;
+   cursor: pointer;
+}
+li:hover{
+    background-color: green;
+    border: 2px solid gold;
+}
+img{
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+}
+li:hover a {
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+footer {
+    display: inline-block;
+   background-color: lightgreen;
+   border-radius: 5px;
+   border: 2px solid #2980b9;
+   padding: 5px;
+}
+header{
+    padding:5px;
+}
+button:active{
+    background-color: lightgoldenrodyellow;
+    color:red;
+    border-radius: 8px;
+    box-shadow: inset 2px 2px 5px green;
+}
+input[type="text"],input[type="email"],textarea,button{
+    background-color: lightgreen;
+    margin: 15px 0px;
+    box-sizing: border-box;
+    display: block;
+    width: 400px;
+    border-radius: 5px;
+    color:lightcoral;
+    box-shadow: inset 2px 2px 5px grey;
+}
+textarea{
+    height: 200px;
+    padding: 5px 4px;
+}
+h1{
+    color: red;
+}
+th, td {
+    border: 1px solid #2980b9;
+    background-color: lightgreen;
+    border-radius: 5px;
+    padding: 5px;
+  }
+
+  table{
+    margin: 15px;
+  }

@@ -1,0 +1,106 @@
+body{
+    background-color: blanchedalmond;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+header{
+    min-height: 300px;
+    font-size: 400%;
+    display: flex;
+    justify-content: center; /* Horizontaal centreren */
+}
+footer {
+    background-color: olivedrab;
+    border-radius: 15px;
+    width: 100%; /* Zorgt ervoor dat de footer de volledige breedte van de container beslaat */
+    min-height: 300px;
+    display: flex;
+    justify-content: center; /* Inhoud horizontaal centreren */
+    align-items: center; /* Inhoud verticaal centreren */
+    margin-top: 15px; /* Ruimte boven de footer */
+}
+h1{
+    background-image: url(afbeeldingen/Goes.jfif);
+    min-height: 300px;
+    display: flex; /* Flexbox activeren */
+    align-items: center;
+    border-radius: 15px;
+}
+[class*="col-"] {
+    flex-grow: 1;
+    padding: 15px;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+#een{
+    min-height: 300px;
+    background-color: olive;
+    padding: 5px;
+    height: auto;
+    border-radius: 15px;
+}
+#twee{
+    min-height: 300px;
+    background-color: rgb(16, 129, 86);
+    height: auto;
+    border-radius: 15px;
+}
+.links{
+    min-height: 300px;
+    display: flex;
+    padding: 5px;
+}
+.rechts{
+    min-height: 300px;
+    display: flex;
+    padding: 5px;
+}
+img{
+    padding: 1%;
+    max-width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+#een, #twee {
+    flex: 1; /* Beide secties krijgen een gelijke ruimte */
+}
+
+#container {
+    display: flex; /* Zorgt ervoor dat de kinderen (#een en #twee) naast elkaar staan */
+    flex-wrap: wrap; /* Zorg ervoor dat de footer onder de kolommen komt */
+    margin: 0; /* Verwijder eventuele marges */
+    padding: 0; /* Verwijder eventuele padding */
+}
+
+#container > div {
+    display: flex; /* Zorgt ervoor dat de inhoud van de kinderen wordt uitgelijnd */
+    flex-direction: column; /* Zorgt ervoor dat de inhoud verticaal wordt gestapeld */
+}
+
+#een, #twee {
+    display: flex; /* Zorgt ervoor dat de inhoud binnen #een en #twee goed wordt uitgelijnd */
+    flex-direction: column; /* Zorgt ervoor dat de inhoud verticaal wordt uitgelijnd */
+    justify-content: space-between; /* Zorgt ervoor dat de inhoud gelijkmatig verdeeld wordt zonder te vervormen */
+}
+
+
+
+@media only screen and (min-width: 1200px) {
+    body{
+        background-color: cornflowerblue;
+}
+}
